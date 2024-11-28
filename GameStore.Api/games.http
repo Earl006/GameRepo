@@ -1,0 +1,33 @@
+GET http://localhost:5236/games
+
+### GET Game by Id
+GET http://localhost:5236/games/2
+
+### POST Create Game
+POST http://localhost:5236/games
+Content-Type: application/json
+
+{
+    "name": "Speed Hunters",
+    "genreId": 2,
+    "price": 59.99,
+    "releaseDate": "2007-11-13"
+}
+
+### PUT Update Game
+PUT http://localhost:5236/games/2
+Content-Type: application/json
+    
+    {
+        "name": "Need for Speed MW",
+        "genreId": 2,
+        "price": 49.99,
+        "releaseDate": "2007-11-13"
+    }
+
+### DELETE Game
+DELETE http://localhost:5236/games/2
+
+##Genres
+### GET Genres
+GET http://localhost:5236/genres
